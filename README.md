@@ -1,35 +1,18 @@
-```{=html}
-<p align="center">
-```
-`<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/Flask-Web%20Framework-000000?style=for-the-badge&logo=flask&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/JavaScript-Interface-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />`{=html}
-```{=html}
-</p>
-```
-# 📸 SmartFace Attendance System
 
-> A web-based attendance management application that uses face
-> recognition and computer vision to help identify registered people and
-> manage attendance records.
+📸 AI-Attendance-Management-System-
 
-SmartFace Attendance System is built with Python and Flask, with HTML
-templates and static CSS/JavaScript files powering the web interface.
+> A web-based attendance management application that uses face recognition and computer vision to help identify registered people and manage attendance records.
+
+AI-Attendance-Management-System is built with Python and Flask, with HTML templates and static CSS/JavaScript files powering the web interface.
 The application uses a local folder for registered face images and
 stores attendance records locally. It is designed as a practical project
 for learning and demonstrating face-recognition-based attendance
 workflows.
 
-------------------------------------------------------------------------
+✨ Features
 
-## ✨ Features
-
-  -----------------------------------------------------------------------
   Feature                             Description
-  ----------------------------------- -----------------------------------
+   -----------------------------------
   📷 **Camera-Based Scanning**        Uses the camera through the web
                                       application for face-scanning
                                       workflows.
@@ -43,7 +26,7 @@ workflows.
                                       from the local `known_faces/`
                                       folder.
 
-  🗓️ **Attendance Records**           Attendance data is managed locally
+  🗓️ **Attendance Records**           Attendance data is managed  locally   
                                       by the application.
 
   🖥️ **Web Interface**                Flask serves the pages using HTML
@@ -59,9 +42,7 @@ workflows.
                                       published in the repository.
   -----------------------------------------------------------------------
 
-> Feature availability depends on the current application code and local
-> configuration. This README describes the Flask-based project
-> structure, not the older React/FastAPI version.
+> Feature availability depends on the current application code and local configuration. This README describes the Flask-based project structure, not the older React/FastAPI version.
 
 ------------------------------------------------------------------------
 
@@ -69,7 +50,6 @@ workflows.
 
 The application uses a Flask-based web architecture:
 
-``` text
 ┌─────────────────────────────────────────────────────┐
 │                  Web Browser                        │
 │         HTML templates + CSS + JavaScript           │
@@ -88,43 +68,37 @@ The application uses a Flask-based web architecture:
 │  Face-recognition dependencies, known_faces/,       │
 │              attendance_records/                    │
 └─────────────────────────────────────────────────────┘
-```
 
 ------------------------------------------------------------------------
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
 
-  -----------------------------------------------------------------------
+  ----------------------------------------------------------------------
   Area                    Technology              Purpose
-  ----------------------- ----------------------- -----------------------
-  **Backend / Web         Python, Flask           Runs the web
-  Framework**                                     application and handles
-                                                  requests
+  ----------------------- ----------------------- 
+  Frontend**            HTML5, CSS3, JavaScript   Builds the web pages
+                                                  and client-side
+                                                  interactions
 
-  **Computer Vision**     OpenCV                  Image and camera
+  Backend / Web         Python, Flask             Runs the web
+  Framework**                                     application and handles requests
+      
+  Computer Vision**     OpenCV                    Image and camera
                                                   processing
 
-  **Face Recognition**    `face_recognition`      Face-recognition
+  Face Recognition**    `face_recognition`        Face-recognition
                                                   functionality, as used
                                                   by the project
 
-  **Data Handling**       Pandas, OpenPyXL        Supports local
+  Data Handling**       Pandas, OpenPyXL          Supports local
                                                   attendance spreadsheet
                                                   workflows
 
-  **Frontend**            HTML5, CSS3, JavaScript Builds the web pages
-                                                  and client-side
-                                                  interactions
-  -----------------------------------------------------------------------
+  
+  ---------------------------------------------------------------------
 
-See [`requirements.txt`](requirements.txt) for the package versions
-configured for this project.
+📁 Project Structure
 
-------------------------------------------------------------------------
-
-## 📁 Project Structure
-
-``` text
 SmartFace-Attendance-System/
 ├── app.py                       # Flask application
 ├── requirements.txt             # Python dependencies
@@ -141,17 +115,15 @@ SmartFace-Attendance-System/
 └── templates/
     ├── dashboard.html           # Dashboard page
     └── index.html               # Main page
-```
 
 The `known_faces/` and `attendance_records/` directories may be empty or
 need to be created after cloning because private data files are
 intentionally not included in the public repository.
 
 ------------------------------------------------------------------------
+🚀 Getting Started
 
-## 🚀 Getting Started
-
-### Prerequisites
+Prerequisites
 
   Tool                 Purpose
   -------------------- ------------------------------------
@@ -165,14 +137,12 @@ Face-recognition packages can have operating-system and Python-version
 requirements. Use a Python version compatible with the packages listed
 in `requirements.txt`.
 
-### 1. Clone the repository
+1. Clone the repository
 
-``` bash
 git clone https://github.com/aaru-patel-08/AI-Attendance-Management-System-.git
 cd AI-Attendance-Management-System-
-```
 
-### 2. Create a virtual environment
+2. Create a virtual environment
 
 **Windows PowerShell:**
 
@@ -187,8 +157,7 @@ python -m venv .venv
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-
-### 3. Install dependencies
+3. Install dependencies
 
 ``` bash
 python -m pip install --upgrade pip
@@ -199,7 +168,7 @@ If installation fails for a computer-vision or face-recognition
 dependency, read the complete error output and follow that package's
 installation instructions for your operating system.
 
-### 4. Prepare local data folders
+4. Prepare local data folders
 
 Create the folders if they are not already present:
 
@@ -207,7 +176,6 @@ Create the folders if they are not already present:
 known_faces/
 attendance_records/
 ```
-
 Add the face images you are authorized to use to `known_faces/`. Follow
 the naming format expected by `app.py`. Do not upload real face images
 or attendance spreadsheets to a public repository.
@@ -215,7 +183,7 @@ or attendance spreadsheets to a public repository.
 The application may create or update attendance files in
 `attendance_records/` during use.
 
-### 5. Run the application
+5. Run the application
 
 ``` bash
 python app.py
@@ -232,7 +200,7 @@ Allow camera access in the browser if the application requests it.
 
 ------------------------------------------------------------------------
 
-## 🔐 Privacy and Security
+🔐 Privacy and Security
 
 Face images and attendance records can contain sensitive personal
 information.
@@ -263,22 +231,22 @@ venv/
 
 ------------------------------------------------------------------------
 
-## 🧰 Troubleshooting
+🧰 Troubleshooting
 
-### The camera does not start
+The camera does not start
 
 -   Confirm the webcam is connected and not being used by another
     application.
 -   Allow camera access in the browser and operating-system settings.
 -   Check the terminal for application errors.
 
-### A face is not recognized
+A face is not recognized
 
 -   Confirm that the registered image is in `known_faces/`.
 -   Check the image filename format expected by the code.
 -   Try a clear, well-lit image and check the terminal output.
 
-### Python packages fail to install
+Python packages fail to install
 
 -   Confirm that your virtual environment is active.
 -   Check your Python version against the dependencies in
@@ -286,7 +254,7 @@ venv/
 -   Some computer-vision packages may require additional native build
     tools.
 
-### Attendance records are not saved
+Attendance records are not saved
 
 -   Confirm that `attendance_records/` exists and is writable.
 -   Check the terminal output for errors related to file access or
@@ -294,7 +262,7 @@ venv/
 
 ------------------------------------------------------------------------
 
-## 📌 Notes
+📌 Notes
 
 -   This repository documents the Flask-based SmartFace Attendance
     System.
@@ -303,13 +271,13 @@ venv/
 -   A new user should register or provide their own authorized test face
     images before trying face-recognition functionality.
 
-## 👩‍💻 Author
+👩‍💻 Author
 
-**Aarju Dholariya**
+Aarju Dholariya
 
 ------------------------------------------------------------------------
 
-## 🙏 Acknowledgements
+🙏 Acknowledgements
 
 -   [Python](https://www.python.org/) --- Programming language
 -   [Flask](https://flask.palletsprojects.com/) --- Web framework
