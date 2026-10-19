@@ -1,0 +1,15 @@
+﻿# Private registered face images
+known_faces/*
+
+# Keep the folder structure in Git
+!known_faces/.gitkeep
+
+# Private attendance records
+attendance_records/*.xlsx
+
+# Python-generated files
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
